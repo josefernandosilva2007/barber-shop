@@ -13,8 +13,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/agendamento")
 @CrossOrigin(origins = "*")
 public class AgendamentoController {
-    @Autowired
-    private AgendamentoService agendamentoService;
+    private final AgendamentoService agendamentoService;
+
+    public AgendamentoController(AgendamentoService agendamentoService) {
+        this.agendamentoService = agendamentoService;
+    }
 
     @PostMapping
     public ResponseEntity<AgendamentoModel> saveAgendamento(@RequestBody AgendamentoDTO dto){
