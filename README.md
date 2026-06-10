@@ -81,15 +81,17 @@ INSERT INTO servicos (id_servico, nome_procedimento, preco) VALUES (3, 'Design S
 Localize o arquivo de propriedades em src/main/resources/application.properties e valide as credenciais de acesso locais. Por padrao, a configuracao para o XAMPP segue a estrutura abaixo:
 
 Properties
-spring.datasource.url=jdbc:mysql://localhost:3306/barber_shop?createDatabaseIfNotExist=true&serverTimezone=UTC
-spring.datasource.username=root
-spring.datasource.password=
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/barber_shop?createDatabaseIfNotExist=true&serverTimezone=UTC  
+spring.datasource.username=root  
+spring.datasource.password=  
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver  
+  
+spring.jpa.hibernate.ddl-auto=update  
+spring.jpa.show-sql=true  
+spring.jpa.properties.hibernate.format_sql=true  
 Aguarde a IDE processar e baixar as dependencias descritas no Maven.
+```
 
 Navegue ate a classe principal do projeto (src/main/java/barbershop/demo/DemoApplication.java), clique com o botao direito e selecione a opcao Run (Executar).
 
