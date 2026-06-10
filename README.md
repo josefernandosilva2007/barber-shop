@@ -34,7 +34,7 @@ cpf_profissional VARCHAR(14) PRIMARY KEY,
 nome_profissional VARCHAR(80),
 endereco_profissional VARCHAR(120),
 email_profissional VARCHAR(50),
-data_de_nascimento DATE
+data_de_nascimento_profissional DATE
 );
 
 -- Criacao da tabela de servicos cadastrados
