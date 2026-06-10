@@ -9,8 +9,6 @@ import barbershop.demo.repository.AgendamentoRepository;
 import barbershop.demo.repository.ClienteRepository;
 import barbershop.demo.repository.ProfessionalRepository;
 import barbershop.demo.repository.ServicoRepository;
-import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

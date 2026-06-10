@@ -5,8 +5,6 @@ import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.time.OffsetTime;
-import java.util.Date;
 
 @Entity
 @Table(name = "agendamento")

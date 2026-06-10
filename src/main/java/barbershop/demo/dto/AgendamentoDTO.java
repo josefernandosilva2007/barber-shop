@@ -1,7 +1,5 @@
 package barbershop.demo.dto;
 
-import java.time.LocalDate;
-
 public record AgendamentoDTO(
   String cpfCliente,
   String nomeCliente,
