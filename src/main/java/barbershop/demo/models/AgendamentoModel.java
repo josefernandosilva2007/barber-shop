@@ -1,6 +1,7 @@
 package barbershop.demo.models;
 
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 import java.io.Serializable;
 
@@ -9,11 +10,13 @@ public class AgendamentoModel implements Serializable {
     @Id
     private Integer protocolo;
 
-    private ClienteModel cliente;
+    @ManyToOne
+    private ClienteModel cpfCliente;
 
-    private ProfessionalModel professional;
+    @ManyToOne
+    private ProfessionalModel cpfProfessional;
 
-    private ServicoModel servico;
+    private ServicoModel idServico;
 
     
 }
