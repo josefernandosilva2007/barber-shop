@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -34,5 +35,5 @@ public class ClienteModel implements Serializable {
     private String email;
 
     @Column(name = "data_de_nascimento_cliente")
-    private Date dataDeNascimento;
+    private LocalDate dataDeNascimento;
 }

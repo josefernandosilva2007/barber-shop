@@ -41,6 +41,9 @@ public class AgendamentoService {
             cliente = new ClienteModel();
             cliente.setCpf(dto.cpfCliente());
             cliente.setNome(dto.nomeCliente());
+            cliente.setEmail(dto.emailCliente());
+            cliente.setEndereco(dto.enderecoCliente());
+            cliente.setDataDeNascimento(LocalDate.parse(dto.dataNascimentoCliente()));
             cliente = clienteRepo.save(cliente);
         }
 
